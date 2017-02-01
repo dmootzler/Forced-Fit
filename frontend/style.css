@@ -1,0 +1,122 @@
+html {
+    font-family: Roboto;
+    color: white;
+}
+
+.screen-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index: 1;
+    
+    transition: all .3s;
+}
+
+.active-screen {
+    z-index: 2;
+}
+
+#screen-splash {
+    background-image: url(img/stripes.jpg);
+    justify-content: flex-end;
+    
+    left: 0;
+}
+
+.logo-wrapper {
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-image: url(img/fmodel1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    font-family: Logo;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+.logospan {
+    font-family: Logo;
+    letter-spacing: 3px;
+    font-size: 60px;
+}
+
+.logo-subtext {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: .6;
+}
+
+.button {
+    padding: 15px 0px;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    
+    cursor: pointer;
+}
+
+.solid {
+    background-color: white;
+    color: dimgray;
+}
+
+#screen-signup {
+    background-color: black;
+}
+
+.header-wrapper {
+    background-image: url(img/mworkout1.jpeg);
+    background-position: center;
+    background-size: cover;
+    
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+input {
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    
+    border: none;
+    border-bottom: 1px solid white;
+    
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 100;
+    color: white;
+    font-weight: 100;
+    
+    background-color: rgba(255,255,255,0.3);
+}

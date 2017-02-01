@@ -4,13 +4,41 @@
     <head>
         <meta lang="en">
         <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <title>ForcedFit</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
         <link rel="stylesheet" href="fonts/fonts.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="screen-splash" class="screen-wrapper active-screen">
+            <div class="logo-wrapper">
+                <div class="logo">ForcedFit</div>
+                <div class="logo-subtext">Get paid to get fit</div>
+            </div>
+            <div class="button solid" id="splash-login">Login</div>
+            <div class="button hollow" id="splash-signup">Signup</div>
+        </div>
+        <div id="screen-signup" class="screen-wrapper">
+            <div class="header-wrapper">
+                <div class="header">
+                    Create a<br>
+                    <span class="logospan">ForcedFit</span><br>
+                    account
+                </div>
+            </div>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+            <div class="button solid">
+                Continue
+            </div>
+        </div>
+        
+        <script src="jquery-3.1.1.min.js"></script>
         <script src="https://js.stripe.com/v2/"></script>
         <script src="config.js"></script>
         <script src="script.js"></script>
+        <script src="init.js"></script>
     </body>
 </html>

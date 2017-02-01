@@ -1,0 +1,13 @@
+1. Add email address, password
+2. Enter age, gender
+3. Enter first workout type (gym, run)
+4. Enter workout details
+5. Enter workout frequency, bounty
+6. Enter payment info
+7. Homescreen
+    - See earnings
+    - Add new workout
+    - Start existing workout
+    - Add funds
+    - Withdraw funds
+    - 
