@@ -1,6 +1,8 @@
 html {
     font-family: Roboto;
     color: white;
+    
+    background-color: black;
 }
 
 .screen-wrapper {
@@ -13,7 +15,7 @@ html {
     width: 100vw;
     position: fixed;
     top: 0;
-    left: -100vw;
+    left: 100vw;
     z-index: 1;
     
     transition: all .3s;
@@ -62,6 +64,7 @@ html {
     letter-spacing: 2px;
     text-transform: uppercase;
     opacity: .6;
+    font-size: 18px;
 }
 
 .button {
@@ -83,11 +86,14 @@ html {
 }
 
 #screen-signup {
-    background-color: black;
+    background-image: url(img/mmodel1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .header-wrapper {
     background-image: url(img/mworkout1.jpeg);
+    background-image: none;
     background-position: center;
     background-size: cover;
     
@@ -96,12 +102,27 @@ html {
     flex-shrink: 1;
     
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
     
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
     letter-spacing: 3px;
+}
+
+.centerer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.header-subtext {
+    padding: 10px 0;
+    opacity: .8;
 }
 
 input {
@@ -110,13 +131,116 @@ input {
     box-sizing: border-box;
     
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid gray;
+    outline: none;
     
     font-size: 30px;
     font-family: Roboto;
     font-weight: 100;
-    color: white;
+    color: dimgray;
     font-weight: 100;
     
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(0,0,0,0.5);
+}
+
+#screen-workout .header-wrapper {
+    background-image: url(img/fworkout2.jpg);
+    background-image: none;
+    background-color: white;
+    color: gray;
+    font-size: 36px;
+    background-size: contain;
+}
+
+#screen-workout .header-subtext {
+    font-size: 22px;
+}
+
+#screen-workout .logo-subtext {
+    text-transform: none;
+}
+
+#screen-workout .button {
+    text-transform: none;
+    padding: 30px 0;
+    font-weight: 100;
+    box-sizing: border-box;
+    
+    background-size: cover;
+}
+
+#workout-gym-alone {
+    background-image: url(img/mworkout3.jpg);
+    background-position: center;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#workout-gym-nalone {
+    background-image: url(img/workout1.jpg);
+    background-position: top;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#workout-run {
+    background-image: url(img/mworkout2.jpg);
+    background-position: bottom;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.targetType {
+    outline: 8px solid dodgerblue;
+}
+
+#screen-workout-approval .header-wrapper {
+    background-image: url(img/fworkout2.jpg);
+    justify-content: center;
+}
+
+#screen-workout-approval .workout-info {
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 100;
+    opacity: .6;
+    letter-spacing: 1px;
+}
+
+#screen-workout-approval .hollow, #screen-bounty .hollow {
+    background-image: url(img/stripes.jpg);
+    background-size: auto;
+}
+
+#screen-bounty .header-wrapper {
+    background-image: url(img/gear1.jpeg);
+    justify-content: center;
+}
+
+#screen-bounty .header-subtext {
+    opacity: 0.6;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.payout-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+    text-align: center;
+}
+
+.payout-option {
+    font-size: 24px;
+    background-color: white;
+    color: gray;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 10px 0;
+    border: 1px solid lightgray;
+}
+
+#screen-bounty .button {
+    margin-top: 30px;
 }

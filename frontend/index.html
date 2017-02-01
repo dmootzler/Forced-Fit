@@ -21,18 +21,127 @@
         </div>
         <div id="screen-signup" class="screen-wrapper">
             <div class="header-wrapper">
-                <div class="header">
-                    Create a<br>
-                    <span class="logospan">ForcedFit</span><br>
-                    account
+                <div class="centerer">
+                    <div class="logo">ForcedFit</div>
+                    <div class="logo-subtext">Get paid to look like this</div>
                 </div>
+                <div class="header-subtext">Create an account</div>
             </div>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <input type="password" placeholder="Confirm Password">
-            <div class="button solid">
+            <input id="signup-email" type="email" placeholder="Email">
+            <input id="signup-password" type="password" placeholder="Password">
+            <input id="signup-passwordcon" type="password" placeholder="Confirm Password">
+            <div class="button solid" id="signup-continue">
                 Continue
             </div>
+        </div>
+        <div id="screen-workout" class="screen-wrapper">
+            <div class="header-wrapper">
+                <div class="centerer">
+                    Create a workout
+                    <div class="logo-subtext">
+                        (You can add more later)
+                    </div>
+                </div>
+                <div class="header-subtext">Select an activity type</div>
+            </div>
+            <div class="button solid" id="workout-gym-nalone">
+                Gym (with instructor)
+            </div>
+            <div class="button solid" id="workout-gym-alone">
+                Gym (alone)
+            </div>
+            <div class="button solid" id="workout-run">
+                Running/biking
+            </div>
+            <div class="button solid" id="workout-continue">
+                Continue
+            </div>
+        </div>
+        <div id="screen-workout-approval" class="screen-wrapper">
+            <div class="header-wrapper">
+                <div class="centerer">
+                    <div class="logo">ForcedFit</div>
+                    <div class="logo-subtext">Understanding the run program</div>
+                </div>
+                <div class="workout-info">
+                You've selected the Run/Bike activity. In order to verify that you're actually working out, we're going to periodically ping your phone's GPS during your runs. This allows us to ensure you're actually going the distance and <i>earning</i> your payouts!
+            </div>
+            </div>
+            <div class="button solid" id="approval-continue">
+                Accept &amp; continue
+            </div>
+            <div class="button hollow" id="approval-back">
+                Go back
+            </div>
+        </div>
+        <div id="screen-bounty" class="screen-wrapper">
+            <div class="header-wrapper">
+                <div class="logo">ForcedFit</div>
+                <div class="logo-subtext">Get paid to get fit</div>
+            </div>
+            <div class="header-subtext">How much do you want to earn per workout?</div>
+            <div class="payout-wrapper" id="payout-amt">
+                <div class="payout-option">
+                    $10
+                </div>
+                <div class="payout-option">
+                    $20
+                </div>
+                <div class="payout-option">
+                    $50
+                </div>
+                <div class="payout-option">
+                    $100
+                </div>
+            </div>
+            <div class="header-subtext">How many workouts will you do per week?</div>
+            <div class="payout-wrapper" id="payout-freq">
+                <div class="payout-option">
+                    3
+                </div>
+                <div class="payout-option">
+                    4
+                </div>
+                <div class="payout-option">
+                    5
+                </div>
+                <div class="payout-option">
+                    6
+                </div>
+                <div class="payout-option">
+                    7
+                </div>
+            </div>
+            <div class="button solid" id="bounty-continue">
+                Continue to payment
+            </div>
+        </div>
+        <div id="payment-info" class="screen-wrapper">
+            <div class="payment-amt">
+                How many weeks of workouts would you like to fund? ($350/week)
+            </div>
+            <div class="payout-wrapper" id="payout-freq">
+                <div class="payout-option">
+                    2
+                </div>
+                <div class="payout-option">
+                    4
+                </div>
+                <div class="payout-option">
+                    8
+                </div>
+                <div class="payout-option">
+                    16
+                </div>
+                <div class="payout-option">
+                    26
+                </div>
+            </div>
+            <input type="text" placeholder="Cardholder Name">
+            <input type="number" placeholder="Credit/Debit Card Number">
+            <input type="text" placeholder="Expiration Date">
+            <input type="number" placeholder="Security code">
+            <input type="text" placeholder="Billing Zip Code">
         </div>
         
         <script src="jquery-3.1.1.min.js"></script>
